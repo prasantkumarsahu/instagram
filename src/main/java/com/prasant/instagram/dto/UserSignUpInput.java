@@ -23,10 +23,10 @@ public class UserSignUpInput {
     private String email;
     @Pattern(regexp = "[0-9]{10}", message = "Phone number must be 10 digits")
     private String phoneNumber;
-    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d\\S]{8,20}$", message = "Password length between 8 and 20 characters.\n" +
-            "At least one uppercase letter.\n" +
-            "At least one lowercase letter.\n" +
-            "At least one digit.\n" +
-            "Can include special characters.")
+    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d\\S]{8,20}$", message = "Password length between 8 and 20 characters." +
+            " At least one uppercase letter." +
+            " At least one lowercase letter." +
+            " At least one digit." +
+            " Can include special characters.")
     private String password;
 }
