@@ -26,7 +26,7 @@ public class Post {
 
     public Post(String postData, User user) {
         this.createdDate = new Timestamp(new Date().getTime());
-        this.updatedDate = this.createdDate;
+        this.updatedDate = new Timestamp(new Date().getTime());
         this.postData = postData;
         this.user = user;
     }
